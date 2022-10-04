@@ -20,7 +20,7 @@ class Application < Sinatra::Base
   end  
 
   get '/hello' do
-    "hello #{params[:name]}"
+    return erb(:hello)
   end
 
   post '/submit' do
